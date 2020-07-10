@@ -12,8 +12,34 @@
 
 import axios from "axios";
 
+const topics = {
+  javascript: "javascript",
+  bootstrap: "bootstrap",
+  technology: "technology",
+  jquery: "jquery",
+  "node.js": "node",
+};
+
+const articleClassTemplate = "article-topic-";
+
 function createTopicItem(topicName) {
   const tabItem = document.createElement("div");
+
+  tabItem.addEventListener("click", () => {
+    const articles = document.querySelectorAll(".card");
+    articles.forEach((article) => {
+      if (
+        !article.classList.contains(
+          `${articleClassTemplate}${topics[topicName]}`
+        )
+      ) {
+        article.style.display = "none";
+      } else {
+        article.style.display = "flex";
+      }
+    });
+  });
+
   tabItem.classList.add("tab");
   tabItem.innerText = `${topicName}`;
   return tabItem;
