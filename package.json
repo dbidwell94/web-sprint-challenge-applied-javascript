@@ -16,11 +16,12 @@
   },
   "homepage": "https://github.com/LambdaSchool/web-sprint-challenge-applied-javascript#readme",
   "devDependencies": {
-    "eslint": "^7.3.0",
+    "eslint": "^7.4.0",
     "less": "^3.11.3",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@dbidwell94/vanilact": "github:dbidwell94/vanilact",
     "axios": "^0.19.2"
   }
 }
