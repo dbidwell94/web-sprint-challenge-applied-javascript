@@ -69,36 +69,3 @@ function createCard(cardData, topicClass) {
   })
   return container.getElement();
 }
-
-// function createCardOld(cardData, topicClass) {
-//   const cardContainer = document.createElement("div");
-//   cardContainer.classList.add("card");
-//   cardContainer.classList.add(topicClass);
-
-//   const headline = document.createElement("div");
-//   headline.classList.add("headline");
-//   headline.innerText = `${cardData.headline}`;
-//   cardContainer.appendChild(headline);
-
-//   const author = document.createElement("div");
-//   author.classList.add("author");
-//   cardContainer.appendChild(author);
-
-//   const authorImgContainer = document.createElement("div");
-//   authorImgContainer.classList.add("img-container");
-//   author.appendChild(authorImgContainer);
-
-//   const authorImg = document.createElement("img");
-//   authorImg.setAttribute("src", cardData.authorPhoto);
-//   authorImgContainer.appendChild(authorImg);
-
-//   const authorName = document.createElement("span");
-//   authorName.innerText = `${cardData.authorName}`;
-//   author.appendChild(authorName);
-
-//   cardContainer.addEventListener("click", () => {
-//     console.log(cardData.headline);
-//   });
-
-//   return cardContainer;
-// }
